@@ -1,0 +1,155 @@
+.ps5_intro {
+    position: absolte;
+    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    //width: 300vmin;
+    //height: 300vmin;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    //padding: 1rem 0 0 0;
+    overflow: hidden;
+    z-index: 11000;
+
+    
+   
+  
+    #initial_logo {
+      
+      padding-top: 1rem;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      width: auto;
+      z-index: 600;
+  
+      .fa-playstation {
+        
+        position: relative;
+        z-index: 20000;
+        text-align: center;
+        color: #fff;
+        font-size: 8rem;
+        animation: fadeIn 4s;
+        -webkit-animation: fadeIn 4s;
+        -moz-animation: fadeIn 4s;
+        -o-animation: fadeIn 4s;
+        -ms-animation: fadeIn 4s;
+        
+      }
+    }
+    
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+   @keyframes reveal {
+         
+      0% {
+        opacity: 0;
+      }
+     
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes hide {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  
+  .intro_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //width: 100%;
+    padding: 1vmin 1rem;
+    animation: reveal 3s linear;
+    animation-delay: 1s;
+    z-index: 2;
+    
+    margin-top: 100px;
+  
+    &.opacity {
+      opacity: 0;
+    }
+  
+    &.intro_info_hide_anim {
+      animation: hide 3s ease-in-out;
+    }
+    
+    
+  
+   
+  
+    .toast {
+      //width: 20rem;
+      //height: 3rem;
+      border-radius: 10rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      //font-size: 0.9rem;
+      font-size: 2vmin;
+      margin-top: 5rem;
+      //padding: 1rem 2rem;
+      padding: 2vmin 5vmin 0 3vmin;
+      font-family: "Roboto", sans-serif;
+    }
+    
+    
+    .toast p {
+      //width: 20rem;
+      //height: 3rem;
+      //border-radius: 10rem;
+      //background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      text-align: right;
+      //font-size: 0.9rem;
+      font-size: 1.7vmin;
+      margin-top: .2rem;
+      margin-right: -19px;
+      //padding: 1rem 2rem;
+  
+      font-family: "Roboto", sans-serif;
+    }
+  }
